@@ -28,6 +28,8 @@ import { TasksPageComponent } from './pages/tasks-page/tasks-page.component';
 import { KabanTasksComponent } from './components/kaban-tasks/kaban-tasks.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { TaskComponent } from './components/task/task.component';
+import { LifeCycleDirective } from './directives/life-cycle.directive';
+import { MouseOverDirective } from './directives/mouse-over.directive';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { TaskComponent } from './components/task/task.component';
     DashboardComponent,
     TasksPageComponent,
     KabanTasksComponent,
-    TaskComponent
+    TaskComponent,
+    LifeCycleDirective,
+    MouseOverDirective
   ],
   imports: [
     BrowserModule,
