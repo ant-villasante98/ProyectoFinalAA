@@ -19,10 +19,10 @@ import { RandomContactPageComponent } from './pages/random-contact-page/random-c
 import { NavComponent } from './components/nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
+import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
+import { MatLegacyListModule as MatListModule } from '@angular/material/legacy-list';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { TasksPageComponent } from './pages/tasks-page/tasks-page.component';
 import { KabanTasksComponent } from './components/kaban-tasks/kaban-tasks.component';
