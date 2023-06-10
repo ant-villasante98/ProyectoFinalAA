@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 //  Importamos lo necesario para construir el formulario
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login-form',
@@ -10,10 +10,10 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class LoginFormComponent implements OnInit {
 
-  loginForm: FormGroup = new FormGroup({});
+  loginForm: UntypedFormGroup = new UntypedFormGroup({});
   @Output() loginAction: EventEmitter<{}> = new EventEmitter<{}>();
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: UntypedFormBuilder) { }
 
   ngOnInit(): void {
 
