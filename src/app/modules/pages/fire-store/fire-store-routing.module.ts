@@ -5,6 +5,7 @@ import { ShoppingPageComponent } from './shopping-page/shopping-page.component';
 const routes: Routes = [
   {
     path: '',
+    pathMatch: 'full',
     redirectTo: 'shop'
   },
   {
